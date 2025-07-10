@@ -24,7 +24,7 @@ console.log(isOfAge(16));
 console.log("===================");
 console.log("中級演習2");
 const isEven = (num) => {
-    return num % 2 === 0;           // 三項演算子
+    return num % 2 === 0;
 }
 console.log(isEven(2));
 console.log(isEven(3));
@@ -57,7 +57,7 @@ console.log(isEven2(4));
 console.log("===================");
 console.log("応用演習2");
 const getGreaterValue = (num1, num2) => {
-    return num1>num2 ? num1 : num2;
+    return num1>num2 ? num1 : num2;    // 三項演算子
 }
 console.log(getGreaterValue(10, 15)); // 15 を表示
 console.log(getGreaterValue(15, 10)); // 15 を表示
