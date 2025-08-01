@@ -1,0 +1,57 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>Single Page Application</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  touch-action: manipulation;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 100vw;
+  height: 100%;
+  aspect-ratio: 4 / 3;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: center center;
+  background: lightyellow;
+  font-size: 20vh;
+}
+
+.main > * {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.red-box {
+    height: 20%;
+    width: auto;
+    aspect-ratio: 1 / 1;
+    background: red;
+}
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class="red-box"></div>
+        aaa
+
+
+    </div>
+</body>
+</html>
