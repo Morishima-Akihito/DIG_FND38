@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>アスペクト比 2:1 の中央配置</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #base {
+      width: 100%;
+      height: 100%;
+      container-type: size;
+      container-name: base;
+      display: grid;
+      place-items: center;
+    }
+
+    #box {
+      aspect-ratio: 2 / 1;
+      width: 100cqw;
+      height: auto;
+      max-height: 100cqh;
+      max-width: 100cqw;
+      background-color: #cce;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: sans-serif;
+      text-align: center;
+      font-size: 10cqh;
+    }
+
+    #info {
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body>
+  <div id="base">
+    <div id="box">
+      <div id="info">CSSのみで最大サイズを確保</div>
+    </div>
+  </div>
+</body>
+</html>
